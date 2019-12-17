@@ -20,14 +20,16 @@
            
            <?php if($isAdmin) { ?>
             <li><a class="header__link" href="/users">Users</a></li>
-           <?php { ?>
+           <?php } ?>
             
           <li><a  class="header__link" href="/registration">Registration</a></li>
           <li><a class="header__link"  href="/contacts">Contacts</a></li>
+          <li><b><?=$currentUser['username']?></b></li>
          </ul>
        </nav>
        <p>
            <?= $routes_str ?>
        </p>
 </header>
+    
 <main class="page">
